@@ -25,7 +25,7 @@ namespace Application.Features.Queries
 
         public async Task<List<GetPersonaDto>> Handle(GetPersonaQuery request, CancellationToken cancellationToken)
         {
-            var personasData = await _context.Personas.ToListAsync();
+            var personasData = await _context.Personas.AsNoTracking().ToListAsync();
 
             var personasResponse = personasData.Select(p => new GetPersonaDto
             {
@@ -33,14 +33,13 @@ namespace Application.Features.Queries
                 Nombres = p.Nombres,
                 Apellidos = p.Apellidos,
                 FechaNacimiento = p.FechaNacimiento.ToString("yyyy-MM-dd"),
-                Identificacion = p.Identificacion,
+                Telefono = p.Identificacion,
                 CiudadOrigen = p.CiudadOrigen,
                 PaisOrigen = p.PaisOrigen,
-                Direccion = p.Direccion,
-                EstadoCivil = p.EstadoCivil
+                Direccion = p.Direccion
             }).ToList();
 
-            return await Task.FromResult(personasResponse);
+            return personasResponse;
         }
     }
 }

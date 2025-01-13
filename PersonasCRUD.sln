@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonaDelete", "PersonaDel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonaEdit", "PersonaEdit\PersonaEdit.csproj", "{E4E6267A-78A7-45FB-9B12-5E84A74C38FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{0B180DC6-D02D-4F6D-B7A4-93E25AE041CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{0B180DC6-D02D-4F6D-B7A4-93E25AE041CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonaTest", "PersonaTest\PersonaTest.csproj", "{B795E442-EC84-4B20-881F-3BD5FD4B963A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0B180DC6-D02D-4F6D-B7A4-93E25AE041CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B180DC6-D02D-4F6D-B7A4-93E25AE041CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B180DC6-D02D-4F6D-B7A4-93E25AE041CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B795E442-EC84-4B20-881F-3BD5FD4B963A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B795E442-EC84-4B20-881F-3BD5FD4B963A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B795E442-EC84-4B20-881F-3BD5FD4B963A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B795E442-EC84-4B20-881F-3BD5FD4B963A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

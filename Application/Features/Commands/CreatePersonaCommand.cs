@@ -15,7 +15,7 @@ namespace Application.Features.Commands
         public int Id { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
-        public string Identificacion { get; set; }
+        public string Telefono { get; set; }
         public string PaisOrigen { get; set; }
         public string CiudadOrigen { get; set; }
         public string Direccion { get; set; }
@@ -40,11 +40,10 @@ namespace Application.Features.Commands
                     Nombres = request.Nombres,
                     Apellidos = request.Apellidos,
                     FechaNacimiento = request.FechaNacimiento,
-                    Identificacion = request.Identificacion,
+                    Identificacion = request.Telefono,
                     CiudadOrigen = request.CiudadOrigen,
                     PaisOrigen = request.PaisOrigen,
                     Direccion = request.Direccion,
-                    EstadoCivil = request.EstadoCivil
                 };
 
                 _context.Personas.Add(persona);
@@ -56,17 +55,17 @@ namespace Application.Features.Commands
                     Nombres = persona.Nombres,
                     Apellidos = persona.Apellidos,
                     FechaNacimiento = persona.FechaNacimiento.ToShortDateString(),
-                    Identificacion = persona.Identificacion,
+                    Telefono = persona.Identificacion,
                     CiudadOrigen = persona.CiudadOrigen,
                     PaisOrigen = persona.PaisOrigen,
                     Direccion= persona.Direccion,
-                    EstadoCivil = persona.EstadoCivil,
+                    ErrorCode = 0,
                     ResultMessage = "Persona creada exitosamente"
                 };
             }
             catch (Exception ex)
             {
-                return new PostPersonaDto { ResultMessage = ex.Message };
+                return new PostPersonaDto { ResultMessage = ex.Message, ErrorCode = -1 };
             }
             
         }

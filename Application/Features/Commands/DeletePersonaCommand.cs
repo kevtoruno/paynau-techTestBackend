@@ -31,6 +31,8 @@ namespace Application.Features.Commands
             {
                 return new DeletePersonaDto
                 {
+                    Id = 0,
+                    ErrorCode = 404,
                     ResultMessage = "No se encontró persona."
                 };
             }
@@ -40,7 +42,9 @@ namespace Application.Features.Commands
 
             return new DeletePersonaDto
             {
-                ResultMessage = "Persona eliminada correctamente."
+                Id = request.Id,
+                ResultMessage = "Persona eliminada correctamente.",
+                ErrorCode = 200
             };
         }
     }

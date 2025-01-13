@@ -11,7 +11,7 @@ namespace Application.Dto
         public int Id { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
-        public string Identificacion { get; set; }
+        public string Telefono { get; set; }
         public string PaisOrigen { get; set; }
         public string CiudadOrigen { get; set; }
         public string Direccion { get; set; }
@@ -19,5 +19,6 @@ namespace Application.Dto
         public string EstadoCivil { get; set; }
 
         public string ResultMessage { get; set; }
+        public int ErrorCode { get; set; }
     }
 }

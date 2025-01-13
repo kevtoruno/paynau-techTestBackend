@@ -14,9 +14,9 @@ La arquitectura del backend cuenta de 4 funciones lambdas, y 2 librerias de clas
 
 - PersonaEdit: Funcion lambda para editar registros de persona.
 
-* API Gateway ENDPOINT: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person
+API Gateway ENDPOINT: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person
 
-* Obtener personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/get
-* Editar personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/edit
-* Crear personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/create
-* Elimninar personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/delete
+- Obtener personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/get
+- Editar personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/edit
+- Crear personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/create
+- Elimninar personas: https://9jpxq58d04.execute-api.us-east-2.amazonaws.com/paynautechtest/person/delete
