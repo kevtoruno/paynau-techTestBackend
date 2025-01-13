@@ -37,6 +37,6 @@ Se utilizó la libreria "xUnit", para probar el proyecto:
 1. En el "Test Explorer", unicamente darle al boton de "Run all tests".
 2. También, se puede probar corriendo el siguiente comando "dotnet test"
 
-Repositorio front end: https://github.com/kevtoruno/paynau-techTest-client
+**Repositorio front end:** https://github.com/kevtoruno/paynau-techTest-client
 
-Aplicacion desplegada en AWS Amplify: https://main.d2lz1ksmzb9cu6.amplifyapp.com/
+**Aplicación desplegada en AWS Amplify:** https://main.d2lz1ksmzb9cu6.amplifyapp.com/
